@@ -1,7 +1,7 @@
 <html>
 <head>
  <title>CRISPR: Bleeding-Edge Genetics</title>
- <meta name="viewport" content="width=device-width, initial-scale=1" user-scalable=no >
+ <meta name="viewport" content="initial-scale=1" user-scalable=no >
  <style>
  body {
    font-family: sans-serif;
@@ -14,13 +14,31 @@
    height: 16%;
    box-shadow: 0px 0px 25px #888888;
  }
- #box {
+ #main-box {
+   overflow: hidden;
    position: absolute;
    left: 2%;
    top: 20%;
    width: 96%;
    height: 76%;
    box-shadow: 0px 0px 25px #888888;
+ }
+ .info-box {
+   position: absolute;
+   right: 150%;
+   top: 2%;
+   width: calc(56% - 20px);
+   min-width: calc(92% - 325px);
+   height: calc(96% - 20px);
+   border: 10px solid darkred;
+   background-color: white;
+   box-shadow: 0px 0px 5px rgb(0,0,0);
+   -webkit-transition: right 1s;
+   transition: right 1s;
+ }
+ .barrier {
+   width: 95%;
+   border: 5px solid rgb(50,50,50);
  }
  #side-bar {
    position: absolute;
@@ -30,7 +48,7 @@
    max-width: 325px;
    height: 76%;
    background-color: darkred;
-   box-shadow: 0px 0px 25px #888888;
+   box-shadow: 0px 0px 25px rgb(0,0,0);
  }
  #tiny-bar {
    position: absolute;
@@ -41,13 +59,13 @@
    height: calc(18% - 20px);
    background-color: lightgray;
    border: 10px solid darkred;
-   box-shadow: 0px 0px 25px #888888;
+   box-shadow: 0px 0px 25px rgb(0,0,0);
  }
  .nav-item {
    touch-action: manipulation;
    width: 90%;
-   height: 24%;
-   font-size: 25px;
+   height: 23%;
+   font-size: 1.5em;
    float: inherit;
    text-align: center;
    margin: auto;
@@ -60,25 +78,63 @@
    color: rgba(50,50,50,1);
  }
  h1 {
-   text-align: right;
-   padding-right: 50px;
-   color: blue;
+   text-align: center;
+   font-size: 3em;
+   color: rgba(50,50,50,1);
  }
  </style>
 </head>
 <body>
   <div id="title-box">
-
+    <h1>CRISPR: Bleeding Edge Gene Editing</h1>
   </div>
-<div id="box">
+<div id="main-box">
+  <div id="main" class="info-box">
+    <h1>CRISPR: Introduction</h1>
+    <hr class="barrier">
+  </div>
+  <div id="past" style="border: 10px solid black;" class="info-box">
+    <h1>Genetic Modification in the Past</h1>
+    <hr class="barrier">
+  </div>
+  <div id="what" style="border: 10px solid green;" class="info-box">
+    <h1>What is CRISPR?</h1>
+    <hr class="barrier">
+  </div>
+  <div id="future" style="border: 10px solid blue;" class="info-box">
+    <h1>DNA of the Future</h1>
+    <hr class="barrier">
+  </div>
   <div id="side-bar">
-    <h1 style="font-size: 40px; color: lightblue; text-align: center;">Navigation</h1>
-    <button class="nav-item"><div style="padding: 5%;">Genetic Modification in the past</div></button>
-    <button class="nav-item"><div style="padding: 5%;">How CRISPR Works</div></button>
-    <button class="nav-item"><div style="padding: 5%;">DNA of the Future</div></button>
+    <h1 style="font-size: 2.5em; color: lightblue; text-align: center;">Navigation</h1>
+    <button onclick="showPast();" class="nav-item" style="border: 10px solid black;"><div style="padding: 5%;">Genetic Modification in the Past</div></button>
+    <button onclick="showWhat();" class="nav-item" style="border: 10px solid green;"><div style="padding: 5%;">What is CRISPR</div></button>
+    <button onclick="showFuture();" class="nav-item" style="border: 10px solid blue;"><div style="padding: 5%;">DNA of the Future</div></button>
   </div>
   <div id="tiny-bar">
 
   </div>
 </div>
+<script>
+  document.getElementById("main").style.right = "2%";
+  function showPast() {
+    document.getElementById("main").style.right = "150%";
+    document.getElementById("past").style.right = "2%";
+    document.getElementById("what").style.right = "150%";
+    document.getElementById("future").style.right = "150%";
+  }
+  function showWhat() {
+    document.getElementById("main").style.right = "150%";
+    document.getElementById("past").style.right = "150%";
+    document.getElementById("what").style.right = "2%";
+    document.getElementById("future").style.right = "150%";
+  }
+  function showFuture() {
+    document.getElementById("past").style.right = "150%";
+    document.getElementById("main").style.right = "150%";
+    document.getElementById("what").style.right = "150%";
+    document.getElementById("future").style.right = "2%";
+  }
+</script>
 </body>
+</html>
