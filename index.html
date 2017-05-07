@@ -27,35 +27,14 @@
     <hr class="barrier">
   </div>
   <div id="side-bar">
-    <h1 style="font-size: 2.5em; color: lightblue; text-align: center;">Navigation</h1>
-    <button onclick="showPast();" class="nav-item" style="border: 10px solid black;"><div style="padding: 5%;">Genetic Modification in the Past</div></button>
-    <button onclick="showWhat();" class="nav-item" style="border: 10px solid green;"><div style="padding: 5%;">What is CRISPR</div></button>
-    <button onclick="showFuture();" class="nav-item" style="border: 10px solid blue;"><div style="padding: 5%;">DNA of the Future</div></button>
-  </div>
-  <div id="tiny-bar">
-
+    <button id="nav-button" onclick="revealMenu();">></button>
+    <h1 style="font-size: 1em; color: lightblue; text-align: center;">Navigation</h1>
+    <button onclick="showPast();revealMenu();" class="nav-item" style="border: 10px solid black;"><div style="padding: 0%;">Genetic Modification in the Past</div></button>
+    <button onclick="showWhat();revealMenu();" class="nav-item" style="border: 10px solid green;"><div style="padding: 0%;">What is CRISPR</div></button>
+    <button onclick="showFuture();revealMenu();" class="nav-item" style="border: 10px solid blue;"><div style="padding: 0%;">DNA of the Future</div></button>
+    <a href=""><button onclick="" class="nav-item" style="border: 10px solid gray;"><div style="padding: 0%;">Video</div></button></a>
   </div>
 </div>
-<script>
-  document.getElementById("main").style.right = "2%";
-  function showPast() {
-    document.getElementById("main").style.right = "150%";
-    document.getElementById("past").style.right = "2%";
-    document.getElementById("what").style.right = "150%";
-    document.getElementById("future").style.right = "150%";
-  }
-  function showWhat() {
-    document.getElementById("main").style.right = "150%";
-    document.getElementById("past").style.right = "150%";
-    document.getElementById("what").style.right = "2%";
-    document.getElementById("future").style.right = "150%";
-  }
-  function showFuture() {
-    document.getElementById("past").style.right = "150%";
-    document.getElementById("main").style.right = "150%";
-    document.getElementById("what").style.right = "150%";
-    document.getElementById("future").style.right = "2%";
-  }
-</script>
+<script src="script.js"></script>
 </body>
 </html>

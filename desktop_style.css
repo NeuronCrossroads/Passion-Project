@@ -35,31 +35,23 @@ body {
    width: 95%;
    border: 5px solid rgb(50,50,50);
  }
+ #nav-button {
+   display: none;
+ }
  #side-bar {
    position: absolute;
    left: 2%;
    top: 2%;
    width: 46%;
    max-width: 325px;
-   height: 76%;
+   height: 96%;
    background-color: darkred;
-   box-shadow: 0px 0px 25px rgb(0,0,0);
- }
- #tiny-bar {
-   position: absolute;
-   left: 2%;
-   bottom: 2%;
-   width: calc(46% - 20px);
-   max-width: 305px;
-   height: calc(18% - 20px);
-   background-color: lightgray;
-   border: 10px solid darkred;
    box-shadow: 0px 0px 25px rgb(0,0,0);
  }
  .nav-item {
    touch-action: manipulation;
    width: 90%;
-   height: 23%;
+   height: 18%;
    font-size: 1.5em;
    float: inherit;
    text-align: center;
