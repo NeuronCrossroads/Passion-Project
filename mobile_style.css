@@ -117,12 +117,12 @@ img {
  .nav-item {
    touch-action: manipulation;
    width: 90%;
-   height: 18%;
+   height: 16%;
    font-size: 0.8em;
    float: inherit;
    text-align: center;
    margin: auto;
-   margin-top: 5%;
+   margin-top: 2%;
    margin-left: 5%;
    line-height: 90%;
    background-color: lightgray;
