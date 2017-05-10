@@ -1,7 +1,11 @@
 if ('addEventListener' in document) {
 	document.addEventListener('DOMContentLoaded', function() {
 		FastClick.attach(document.getElementById('nav-button'));
-    FastClick.attach(document.getElementsByClassName('nav-item'));
+		FastClick.attach(document.getElementById('button-past'));
+		FastClick.attach(document.getElementById('button-what'));
+		FastClick.attach(document.getElementById('button-future'));
+		FastClick.attach(document.getElementById('button-video'));
+		FastClick.attach(document.getElementById('button-works'));
 	}, false);
 }
 
