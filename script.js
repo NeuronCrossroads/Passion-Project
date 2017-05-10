@@ -1,3 +1,10 @@
+if ('addEventListener' in document) {
+	document.addEventListener('DOMContentLoaded', function() {
+		FastClick.attach(document.getElementById('nav-button'));
+    FastClick.attach(document.getElementsByClassName('nav-item'));
+	}, false);
+}
+
 document.getElementById("main").style.right = "2%";
 var navOpen = false;
 
@@ -21,6 +28,7 @@ function showPast() {
   document.getElementById("past").style.right = "2%";
   document.getElementById("what").style.right = "150%";
   document.getElementById("future").style.right = "150%";
+  document.getElementById("works").style.right = "150%";
 }
 
 function showWhat() {
@@ -28,6 +36,7 @@ function showWhat() {
   document.getElementById("past").style.right = "150%";
   document.getElementById("what").style.right = "2%";
   document.getElementById("future").style.right = "150%";
+  document.getElementById("works").style.right = "150%";
 }
 
 function showFuture() {
@@ -35,4 +44,13 @@ function showFuture() {
   document.getElementById("main").style.right = "150%";
   document.getElementById("what").style.right = "150%";
   document.getElementById("future").style.right = "2%";
+  document.getElementById("works").style.right = "150%";
+}
+
+function showWorks() {
+  document.getElementById("past").style.right = "150%";
+  document.getElementById("main").style.right = "150%";
+  document.getElementById("what").style.right = "150%";
+  document.getElementById("future").style.right = "150%";
+  document.getElementById("works").style.right = "2%";
 }

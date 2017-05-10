@@ -68,7 +68,6 @@ img {
    border: 5px solid rgb(50,50,50);
  }
  #nav-button {
-   touch-action: manipulation;
    padding: 0px;
    margin: 0px;
    position: absolute;
@@ -115,7 +114,6 @@ img {
    font-weight: bolder;
  }
  .nav-item {
-   touch-action: manipulation;
    width: 90%;
    height: 16%;
    font-size: 0.8em;

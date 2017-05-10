@@ -8,6 +8,7 @@
  <meta name="apple-mobile-web-app-status-bar-style" content="default">
  <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 740px)" href="mobile_style.css" />
  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 741px)" href="desktop_style.css" />
+ <script src="fastclick.js"></script>
 </head>
 <body>
   <div id="title-box">
@@ -189,6 +190,25 @@
       As new improvements are discovered every day CRISPR will solve problems society never thought solvable; changing the world forever.
     </p>
   </div>
+  <div id="works" style="border: 10px solid darkblue;" class="info-box">
+    <h1>Works Cited</h1>
+    <hr class="barrier">
+    <p>
+      Newton, David E. "Genetic Engineering." Issues: Understanding Controversy and Society, ABC-CLIO, 2017, issues.abc-clio.com/Search/Display/1097973. Accessed 30 Mar. 2017.
+    </p>
+    <p>
+      "CRISPR: A game-changing genetic engineering technique." Science in the News. Harvard University, 31 July 2014. Web. 03 Apr. 2017. <http://sitn.hms.harvard.edu/flash/2014/crispr-a-game-changing-genetic-engineering-technique/>.
+    </p>
+    <p>
+      Mullin, Emily. "U.S. government moves forward with tests of novel Zika vaccine." MIT Technology Review. MIT Technology Review, 03 Apr. 2017. Web. 03 Apr. 2017. <https://www.technologyreview.com/s/604036/us-government-moves-forward-with-tests-of-novel-zika-vaccine/>.
+    </p>
+    <p>
+      Ledford, Heidi. "CRISPR, the disruptor." Nature 522.7554 (2015): 20-24. Web.
+    </p>
+    <p>
+      Doudna, Jennifer. "Jennifer Doudna: How CRISPR lets us edit our DNA." TED. Web. 6 Apr. 2017. <https://www.ted.com/talks/jennifer_doudna_we_can_now_edit_our_dna_but_let_s_do_it_wisely/transcript?language=en>.
+    </p>
+  </div>
   <div id="side-bar">
     <button id="nav-button" onclick="revealMenu();">></button>
     <h1 style="font-size: 1em; color: lightblue; text-align: center;">Navigation</h1>
@@ -196,7 +216,7 @@
     <button onclick="showWhat();revealMenu();" class="nav-item" style="border: 10px solid green;"><div style="padding: 0%;">What is CRISPR</div></button>
     <button onclick="showFuture();revealMenu();" class="nav-item" style="border: 10px solid blue;"><div style="padding: 0%;">DNA of the Future</div></button>
     <a href=""><button onclick="" class="nav-item" style="border: 10px solid gray;"><div style="padding: 0%;">Video</div></button></a>
-    <button onclick="" class="nav-item" style="border: 10px solid darkblue;"><div style="padding: 0%;">Works Cited</div></button>
+    <button onclick="showWorks();revealMenu();" class="nav-item" style="border: 10px solid darkblue;"><div style="padding: 0%;">Works Cited</div></button>
   </div>
 </div>
 <script src="script.js"></script>
