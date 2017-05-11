@@ -6,6 +6,8 @@ if ('addEventListener' in document) {
 		FastClick.attach(document.getElementById('button-future'));
 		FastClick.attach(document.getElementById('button-video'));
 		FastClick.attach(document.getElementById('button-works'));
+		FastClick.attach(document.getElementById('button-more'));
+		FastClick.attach(document.getElementById('button-ethics'));
 	}, false);
 }
 
@@ -33,6 +35,8 @@ function showPast() {
   document.getElementById("what").style.right = "150%";
   document.getElementById("future").style.right = "150%";
   document.getElementById("works").style.right = "150%";
+	document.getElementById("more").style.right = "150%";
+	document.getElementById("ethics").style.right = "150%";
 }
 
 function showWhat() {
@@ -41,6 +45,8 @@ function showWhat() {
   document.getElementById("what").style.right = "2%";
   document.getElementById("future").style.right = "150%";
   document.getElementById("works").style.right = "150%";
+	document.getElementById("more").style.right = "150%";
+	document.getElementById("ethics").style.right = "150%";
 }
 
 function showFuture() {
@@ -49,6 +55,8 @@ function showFuture() {
   document.getElementById("what").style.right = "150%";
   document.getElementById("future").style.right = "2%";
   document.getElementById("works").style.right = "150%";
+	document.getElementById("more").style.right = "150%";
+	document.getElementById("ethics").style.right = "150%";
 }
 
 function showWorks() {
@@ -56,5 +64,27 @@ function showWorks() {
   document.getElementById("main").style.right = "150%";
   document.getElementById("what").style.right = "150%";
   document.getElementById("future").style.right = "150%";
-  document.getElementById("works").style.right = "2%";
+	document.getElementById("works").style.right = "2%";
+	document.getElementById("more").style.right = "150%";
+	document.getElementById("ethics").style.right = "150%";
+}
+
+function showMore() {
+	document.getElementById("past").style.right = "150%";
+  document.getElementById("main").style.right = "150%";
+  document.getElementById("what").style.right = "150%";
+  document.getElementById("future").style.right = "150%";
+	document.getElementById("works").style.right = "150%";
+	document.getElementById("more").style.right = "2%";
+	document.getElementById("ethics").style.right = "150%";
+}
+
+function showEthics() {
+	document.getElementById("past").style.right = "150%";
+  document.getElementById("main").style.right = "150%";
+  document.getElementById("what").style.right = "150%";
+  document.getElementById("future").style.right = "150%";
+	document.getElementById("works").style.right = "150%";
+	document.getElementById("more").style.right = "150%";
+	document.getElementById("ethics").style.right = "2%";
 }

@@ -10,7 +10,7 @@ body {
    margin: 10px;
    margin-left: 4%;
    text-align: left;
-   font-size: 2em;
+   font-size: 1.6em;
    color: rgba(50,50,50,1);
  }
  p {
@@ -75,6 +75,7 @@ body {
    display: none;
  }
  #side-bar {
+   overflow-y: scroll;
    position: absolute;
    left: 2%;
    top: 2%;
@@ -87,7 +88,7 @@ body {
  .nav-item {
    touch-action: manipulation;
    width: 90%;
-   height: 16%;
+   height: 14%;
    font-size: 1.5em;
    float: inherit;
    text-align: center;
@@ -99,4 +100,8 @@ body {
    box-shadow: 0px 0px 25px #888888;
    font-weight: bolder;
    color: rgba(50,50,50,1);
+   transition: width 0.5s;
+ }
+ .nav-item:hover {
+   width: 95%;
  }
