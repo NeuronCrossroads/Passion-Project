@@ -58,7 +58,7 @@ body {
    position: absolute;
    right: 150%;
    top: 2%;
-   width: calc(56% - 20px);
+   width: calc(46% - 20px);
    min-width: calc(92% - 325px);
    height: calc(96% - 20px);
    border: 10px solid darkred;
@@ -75,7 +75,6 @@ body {
    display: none;
  }
  #side-bar {
-   overflow-y: scroll;
    position: absolute;
    left: 2%;
    top: 2%;
@@ -88,7 +87,7 @@ body {
  .nav-item {
    touch-action: manipulation;
    width: 90%;
-   height: 14%;
+   min-height: 8%;
    font-size: 1.5em;
    float: inherit;
    text-align: center;

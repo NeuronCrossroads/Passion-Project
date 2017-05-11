@@ -17,6 +17,12 @@ p {
   margin: 10px;
   line-height: 175%;
 }
+ol {
+  font-size: 0.8em;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 175%;
+}
 .img-container {
   position: relative;
   left: 2%;
