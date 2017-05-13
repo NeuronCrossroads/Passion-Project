@@ -1,14 +1,14 @@
-if ('addEventListener' in document) {
-	document.addEventListener('DOMContentLoaded', function() {
-		FastClick.attach(document.getElementById('nav-button'));
-		FastClick.attach(document.getElementById('button-past'));
-		FastClick.attach(document.getElementById('button-what'));
-		FastClick.attach(document.getElementById('button-future'));
-		FastClick.attach(document.getElementById('button-video'));
-		FastClick.attach(document.getElementById('button-works'));
-		FastClick.attach(document.getElementById('button-more'));
-		FastClick.attach(document.getElementById('button-ethics'));
-	}, false);
+document.getElementById("nav-button").addEventListener("touchstart", revealMenu, false);
+document.getElementById('button-past').addEventListener("touchstart", showPast, false);
+document.getElementById('button-what').addEventListener("touchstart", showWhat, false);
+document.getElementById('button-future').addEventListener("touchstart", showFuture, false);
+document.getElementById('button-video').addEventListener("touchstart", tellMe, false);
+document.getElementById('button-works').addEventListener("touchstart", showWorks, false);
+document.getElementById('button-more').addEventListener("touchstart", showMore, false);
+document.getElementById('button-ethics').addEventListener("touchstart", showEthics, false);
+
+function tellMe() {
+	console.log("clicked!");
 }
 
 document.getElementById("main").style.right = "2%";
